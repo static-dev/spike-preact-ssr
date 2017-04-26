@@ -1,0 +1,39 @@
+{
+  "name": "spike-preact-ssr",
+  "description": "render preact components to html",
+  "version": "0.0.0",
+  "author": "static-dev",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/static-dev/spike-preact-ssr/issues",
+  "dependencies": {
+    "glob": "^7.1.1",
+    "preact": "^8.1.0",
+    "preact-render-to-string": "^3.6.1",
+    "spike-util": "^1.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "coveralls": "^2.13.0",
+    "nyc": "^10.2.0",
+    "snazzy": "^7.0.0",
+    "spike-core": "^1.0.0",
+    "spike-js-standards": "^2.0.1",
+    "standard": "^10.0.1"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "homepage": "https://github.com/static-dev/spike-preact-ssr",
+  "license": "MIT",
+  "main": "lib",
+  "repository": "static-dev/spike-preact-ssr",
+  "scripts": {
+    "coverage": "nyc ava && nyc report --reporter=html && open ./coverage/index.html",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard | snazzy",
+    "test": "nyc ava"
+  }
+}
