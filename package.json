@@ -18,8 +18,9 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "coveralls": "^2.13.0",
     "nyc": "^10.2.0",
+    "rimraf": "^2.6.1",
     "snazzy": "^7.0.0",
-    "spike-core": "^1.0.0",
+    "spike-core": "^1.1.0",
     "spike-js-standards": "^2.0.1",
     "standard": "^10.0.1"
   },

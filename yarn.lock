@@ -385,7 +385,7 @@ babel-code-frame@^6.16.0, babel-code-frame@^6.22.0:
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-babel-core@^6.17.0, babel-core@^6.24.0, babel-core@^6.24.1:
+babel-core@^6.17.0, babel-core@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.24.1.tgz#8c428564dce1e1f41fb337ec34f4c3b022b5ad83"
   dependencies:
@@ -531,14 +531,13 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-loader@^6.4.0:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-6.4.1.tgz#0b34112d5b0748a8dcdbf51acf6f9bd42d50b8ca"
+babel-loader@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-7.0.0.tgz#2e43a66bee1fff4470533d0402c8a4532fafbaf7"
   dependencies:
     find-cache-dir "^0.1.1"
-    loader-utils "^0.2.16"
+    loader-utils "^1.0.2"
     mkdirp "^0.5.1"
-    object-assign "^4.0.1"
 
 babel-messages@^6.23.0:
   version "6.23.0"
@@ -576,11 +575,7 @@ babel-plugin-syntax-exponentiation-operator@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-exponentiation-operator/-/babel-plugin-syntax-exponentiation-operator-6.13.0.tgz#9ee7e8337290da95288201a6a57f4170317830de"
 
-babel-plugin-syntax-flow@^6.18.0:
-  version "6.18.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-flow/-/babel-plugin-syntax-flow-6.18.0.tgz#4c3ab20a2af26aa20cd25995c398c4eb70310c8d"
-
-babel-plugin-syntax-jsx@^6.0.2, babel-plugin-syntax-jsx@^6.8.0:
+babel-plugin-syntax-jsx@^6.8.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
 
@@ -772,14 +767,7 @@ babel-plugin-transform-exponentiation-operator@^6.22.0, babel-plugin-transform-e
     babel-plugin-syntax-exponentiation-operator "^6.8.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-flow-strip-types@^6.22.0:
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-flow-strip-types/-/babel-plugin-transform-flow-strip-types-6.22.0.tgz#84cb672935d43714fdc32bce84568d87441cf7cf"
-  dependencies:
-    babel-plugin-syntax-flow "^6.18.0"
-    babel-runtime "^6.22.0"
-
-babel-plugin-transform-react-jsx@^6.0.2, babel-plugin-transform-react-jsx@^6.24.1:
+babel-plugin-transform-react-jsx@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-jsx/-/babel-plugin-transform-react-jsx-6.24.1.tgz#840a028e7df460dfc3a2d29f0c0d91f6376e66a3"
   dependencies:
@@ -833,13 +821,6 @@ babel-preset-env@^1.4.0:
     babel-plugin-transform-regenerator "^6.22.0"
     browserslist "^1.4.0"
     invariant "^2.2.2"
-
-babel-preset-preact@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-preact/-/babel-preset-preact-1.0.0.tgz#e902c00a148ca21dede79ede1d7c26823b1b7871"
-  dependencies:
-    babel-plugin-syntax-jsx "^6.0.2"
-    babel-plugin-transform-react-jsx "^6.0.2"
 
 babel-register@^6.24.1:
   version "6.24.1"
@@ -2266,9 +2247,13 @@ filename-regex@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/filename-regex/-/filename-regex-2.0.0.tgz#996e3e80479b98b9897f15a8a58b3d084e926775"
 
-filewrap@0.1.0, filewrap@^0.1.0:
+filewrap@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/filewrap/-/filewrap-0.1.0.tgz#839b91c59e28e8dd73ba354aa26096edce689b1c"
+
+filewrap@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/filewrap/-/filewrap-1.0.0.tgz#a6e3cb380af3473da2edd9c9fb29afa88780ffe5"
 
 fill-range@^2.1.0:
   version "2.2.3"
@@ -4540,7 +4525,7 @@ require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
 
-require-from-string@^1.1.0, require-from-string@^1.2.1:
+require-from-string@^1.1.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-1.2.1.tgz#529c9ccef27380adfec9a2f965b649bbee636418"
 
@@ -4570,18 +4555,18 @@ reshape-code-gen@^0.2.1:
     objectfn "^2.0.0"
     with "^5.1.1"
 
-reshape-include@next:
-  version "0.3.0-1"
-  resolved "https://registry.yarnpkg.com/reshape-include/-/reshape-include-0.3.0-1.tgz#89ac59f2574b5d3557f346c7fcd976c28459cb96"
+reshape-include@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/reshape-include/-/reshape-include-1.0.0.tgz#2f75e57e016447c633f48cbb0e2a5ca114275d10"
   dependencies:
     reshape-plugin-util "^0.2.0"
 
-reshape-loader@next:
-  version "0.5.0-2"
-  resolved "https://registry.yarnpkg.com/reshape-loader/-/reshape-loader-0.5.0-2.tgz#a70fdf3697615c0c7be79912c34e137b2abf22af"
+reshape-loader@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/reshape-loader/-/reshape-loader-1.0.0.tgz#c5bf46ad99715b216f87a1b772c4bc2695121cd6"
   dependencies:
     reshape "^0.4.1"
-    reshape-include next
+    reshape-include "^1.0.0"
 
 reshape-parser@^0.2.1:
   version "0.2.1"
@@ -4906,15 +4891,15 @@ spdx-license-ids@^1.0.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
 
-spike-core@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/spike-core/-/spike-core-1.0.0.tgz#bc74540846ee6b0c08dcb3dd979ec6aa2e65134b"
+spike-core@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/spike-core/-/spike-core-1.1.0.tgz#af6bb974097f70aa0084958f99201039fc9abfa5"
   dependencies:
-    babel-core "^6.24.0"
-    babel-loader "^6.4.0"
+    babel-core "^6.24.1"
+    babel-loader "^7.0.0"
     browser-sync "^2.18.8"
     browser-sync-webpack-plugin "^1.1.4"
-    filewrap "^0.1.0"
+    filewrap "^1.0.0"
     glob "^7.0.5"
     hygienist-middleware "^0.1.3"
     joi "^10.4.1"
@@ -4924,12 +4909,12 @@ spike-core@^1.0.0:
     micromatch "^2.3.11"
     mkdirp "^0.5.1"
     postcss-loader "^1.3.2"
-    reshape-loader next
+    reshape-loader "^1.0.0"
     rimraf "^2.6.1"
     source-loader "^0.2.0"
-    spike-util next
+    spike-util "^1.1.0"
     sprout "^1.2.1"
-    webpack "^2.3.3"
+    webpack "^2.4.1"
     when "^3.7.8"
 
 spike-js-standards@^2.0.1:
@@ -4942,15 +4927,6 @@ spike-js-standards@^2.0.1:
 spike-util@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/spike-util/-/spike-util-1.1.0.tgz#a94dee89d3ef4518483d86cfff11864013768e7c"
-  dependencies:
-    filewrap "0.1.0"
-    glob "^7.0.4"
-    micromatch "^2.3.8"
-    when "^3.7.7"
-
-spike-util@next:
-  version "0.5.0-0"
-  resolved "https://registry.yarnpkg.com/spike-util/-/spike-util-0.5.0-0.tgz#0d3eb085bebef1326fc85dc0520585df9de6f28e"
   dependencies:
     filewrap "0.1.0"
     glob "^7.0.4"
@@ -5454,7 +5430,7 @@ webpack-sources@^0.2.3:
     source-list-map "^1.1.1"
     source-map "~0.5.3"
 
-webpack@^2.3.3:
+webpack@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-2.4.1.tgz#15a91dbe34966d8a4b99c7d656efd92a2e5a6f6a"
   dependencies:

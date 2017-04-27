@@ -1,9 +1,12 @@
+import {h, Component} from 'preact' // eslint-disable-line
 import Layout from '../components/layout'
 
-export default function () {
-  return (
-    <Layout>
-      <p>what a cool page</p>
-    </Layout>
-  )
+export default class extends Component {
+  render () {
+    return (
+      <Layout>
+        <p>foo: {this.props.foo}</p>
+      </Layout>
+    )
+  }
 }

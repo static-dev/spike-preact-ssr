@@ -5,7 +5,7 @@
 [![dependencies](https://img.shields.io/david/static-dev/spike-preact-ssr.svg?style=flat-square)](https://david-dm.org/static-dev/spike-preact-ssr)
 [![coverage](https://img.shields.io/coveralls/static-dev/spike-preact-ssr.svg?style=flat-square)](https://coveralls.io/r/static-dev/spike-preact-ssr?branch=master)
 
-Easily render preact components to HTML.
+Easily render [preact](https://github.com/developit/preact) components to HTML
 
 > **Note:** This project is in early development, and versioning is a little different. [Read this](http://markup.im/#q4_cRZ1Q) for more details.
 
@@ -18,10 +18,8 @@ Easily render preact components to HTML.
 Let's say you have some preact components in a folder under `assets/js/pages`, like this:
 
 ```js
-export default class {
-  render () {
-    return (<p>Hello there!</p>)
-  }
+export default ({ foo }) => {
+  return (<p>Hello there! Foo is {foo}</p>)
 }
 ```
 
@@ -36,6 +34,7 @@ module.exports = {
   plugins: [
     new PreactSSR({
       pages: 'assets/js/pages/*.js', // globstar syntax optional
+      props: { foo: 'bar' }, // props to pass to root component
       output: (relativePath) => path.basename(relativePath).replace(/\.js$/, '.html') // by default it will map to its current location and just replace .js with .html
     })
   ]
