@@ -1,7 +1,7 @@
 {
   "name": "spike-preact-ssr",
   "description": "render preact components to html",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "static-dev",
   "ava": {
     "verbose": "true"
