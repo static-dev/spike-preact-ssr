@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/spike-preact-ssr.svg?style=flat-square)](https://npmjs.com/package/spike-preact-ssr)
 [![tests](https://img.shields.io/travis/static-dev/spike-preact-ssr.svg?style=flat-square)](https://travis-ci.org/static-dev/spike-preact-ssr?branch=master)
 [![dependencies](https://img.shields.io/david/static-dev/spike-preact-ssr.svg?style=flat-square)](https://david-dm.org/static-dev/spike-preact-ssr)
-[![coverage](https://img.shields.io/coveralls/static-dev/spike-preact-ssr.svg?style=flat-square)](https://coveralls.io/r/static-dev/spike-preact-ssr?branch=master)
+[![coverage](https://img.shields.io/codecov/c/github/static-dev/spike-preact-ssr.svg?style=flat-square)](https://codecov.io/gh/static-dev/spike-preact-ssr)
 
 Easily render [preact](https://github.com/developit/preact) components to HTML
 
