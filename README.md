@@ -1,5 +1,7 @@
 # Spike Preact SSR
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/static-dev/spike-preact-ssr.svg)](https://greenkeeper.io/)
+
 [![npm](https://img.shields.io/npm/v/spike-preact-ssr.svg?style=flat-square)](https://npmjs.com/package/spike-preact-ssr)
 [![tests](https://img.shields.io/travis/static-dev/spike-preact-ssr.svg?style=flat-square)](https://travis-ci.org/static-dev/spike-preact-ssr?branch=master)
 [![dependencies](https://img.shields.io/david/static-dev/spike-preact-ssr.svg?style=flat-square)](https://david-dm.org/static-dev/spike-preact-ssr)
