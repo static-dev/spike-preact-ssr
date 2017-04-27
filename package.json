@@ -16,6 +16,7 @@
   "devDependencies": {
     "ava": "^0.19.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
+    "codecov": "^2.1.0",
     "coveralls": "^2.13.0",
     "nyc": "^10.2.0",
     "rimraf": "^2.6.1",
@@ -32,8 +33,8 @@
   "main": "lib",
   "repository": "static-dev/spike-preact-ssr",
   "scripts": {
+    "codecov": "nyc report -r lcovonly && codecov",
     "coverage": "nyc ava && nyc report --reporter=html && open ./coverage/index.html",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard | snazzy",
     "test": "nyc ava"
   }
